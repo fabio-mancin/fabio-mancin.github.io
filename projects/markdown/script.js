@@ -5,7 +5,7 @@ class Markdown extends React.Component {
       editor: `# Markdown Previewer
 ## Change text here and see changes below!
 ### For example, this is an header 3
-This is a [link](www.fabiomancin.org) to my website!
+This is a [link](www.fabiomancin.dev) to my website!
 This is a code line: \` <div></div> \`
 
 \`\`\`
