@@ -134,7 +134,7 @@ body main {
 
 @media (min-width: 1024px) {
   body main h1 {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 }
 
@@ -144,7 +144,7 @@ body main h2 {
 
 @media (min-width: 1024px) {
   body main h2 {
-    font-size: 5vw;
+    font-size: 2vw;
   }
 }
 

@@ -94,13 +94,13 @@ body {
         grid-area: main-area;
         h1 {
             @include for-desktop-up {
-                font-size: 5vw;
+                font-size: 3vw;
             }
         }
         h2 {
             font-size: 5.5vw;
             @include for-desktop-up {
-                font-size: 5vw;
+                font-size: 2vw;
             }
         }
     }
