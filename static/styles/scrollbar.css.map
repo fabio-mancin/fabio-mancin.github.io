@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,eAAe,EAAE,IAAI;EACrB,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;CAYnB;;AAfD,AAIE,IAJE,AAID,mBAAmB,CAAC;EACnB,KAAK,EAAE,IAAI;CACZ;;AANH,AAOE,IAPE,AAOD,yBAAyB,CAAC;EACzB,UAAU,EAAE,OAAO;CACpB;;AATH,AAUE,IAVE,AAUD,yBAAyB,CAAC;EACzB,gBAAgB,EAAE,KAAK;EACvB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,iBAAiB;CAC1B",
+    "sources": [
+        "scrollbar.scss"
+    ],
+    "names": [],
+    "file": "scrollbar.css"
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Counter</title>
+    <meta name="description" content="Counter">
+    <meta name="author" content="Fabio">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="button plus tooltip"
+            data-text="Press me to increase the counter by the desidered amount!" >
+            <img class="plus" src="static/plus.svg"></img>
+        </div>
+
+        <div class="counter-container">
+            <label class="label" for="text-input">Add/Subtract by:</label>
+            <input class="input" id="text-input" type="text" value="1" />
+
+            <span class="total">0</span>
+
+            <div class="reset tooltip"
+                data-text="Reset counter." >
+                <img src="static/delete.svg"></img>
+            </div>
+
+            <a class="title" href="https://github.com/fabio-mancin/counter" target="_blank">
+                <img src="static/github.svg"></img>
+                <h1 class="tooltip"
+                    data-text="View on GitHub." >
+                Counter</h1>
+            </a>
+        </div>
+
+        <div class="button tooltip minus"
+            data-text="Press me to decrease the counter by the desidered amount!" >
+            <img src="static/minus.svg"></img>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

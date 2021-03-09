@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
+  background-image: url("./clock.png");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.hand {
+  background-size: cover;
+  position: absolute;
+}
+
+#hours {
+  background-image: url("./hours.png");
+  height: 13em;
+  width: 13em;
+}
+
+#minutes {
+  background-image: url("./minutes.png");
+  transform: rotate(96.5deg);
+  height: 19em;
+  width: 19em;
+}
+
+#seconds {
+  background-image: url("./seconds.png");
+  transform: rotate(6.5deg);
+  height: 16em;
+  width: 16em;
+}

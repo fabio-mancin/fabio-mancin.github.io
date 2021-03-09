@@ -1,0 +1,46 @@
+@import "_breakpoint_mixins.scss";
+
+.home-container {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .quote {
+        margin: 2vh 0;
+        font-size:  3vw;
+        @include for-bigger-phone {
+            font-size: 5vw;
+        }
+
+        @include for-tablet-portrait-up {
+            font-size: 3vw;
+        }
+
+        @include for-desktop-up {
+            font-size: 2vw;
+        }
+    }
+
+
+    img {
+        @include for-bigger-phone {
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    .motto {
+        @include for-bigger-phone {
+            font-size: 6.5vw;
+        }
+        @include for-tablet-portrait-up {
+            font-size: 5vw;
+        }
+        @include for-desktop-up {
+            font-size: 3vw;
+        }
+    }
+}

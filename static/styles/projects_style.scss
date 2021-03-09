@@ -1,0 +1,29 @@
+@import "_breakpoint_mixins.scss";
+
+.projects {
+    display: grid;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1vw;
+    @include for-tablet-portrait-up {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    @include for-big-desktop-up {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .project {
+        @include center;
+        justify-content: space-between;
+    }
+    .project-preview-container {
+        justify-content: center;
+    }
+    .github-icon {
+        width: 24px;
+    }
+}

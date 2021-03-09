@@ -1,0 +1,81 @@
+@import "_breakpoint_mixins.scss";
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    ul {
+        margin-right: 20%;
+        @include for-tablet-portrait-up {
+            margin: auto;
+            margin-right: 10%;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            background: rgba(42, 42, 42, 0.9);
+            margin-bottom: 0.2vh;
+            padding: 1vh 0;
+                border-bottom: 1px solid white;
+            @include for-tablet-portrait-up {
+                flex-direction: row;
+                font-size: 4vw;
+            }
+            @include for-desktop-up {
+                font-size: 2vw;
+            }
+            img {
+                @include for-tablet-portrait-up {
+                    width: 48px;
+                }
+                @include for-desktop-up {
+                    width: 24px;
+                }
+                @include for-big-desktop-up {
+                    width: 48px;
+                }
+            }
+        }
+        li:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.home {
+    width: 100%;
+    section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        @include for-desktop-up {
+            justify-content: space-evenly;
+        }
+        .home-text {
+            display: none;
+            @include for-desktop-up {
+                display: block;
+                font-size: 2vw;
+            }
+        }
+        .home-img-container {
+            margin: 0;
+            width: 24px;
+            @include for-bigger-phone {
+                width: 36px;
+            }
+            @include for-tablet-portrait-up {
+                width: 48px;
+            }
+            img {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+        }    
+    }  
+}
