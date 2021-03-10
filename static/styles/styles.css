@@ -767,6 +767,15 @@ body main h2 {
   }
 }
 
+body main .motto {
+  position: relative;
+}
+
+body main .motto .cursor {
+  position: absolute;
+  right: -2vw;
+}
+
 body footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;

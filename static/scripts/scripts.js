@@ -1,25 +1,44 @@
-$(document).ready(function () {
-  if (window.innerWidth < 1024) {
-    $("li")
-    .click(()=>$(".dropdown-nav")
-    .each((i,e)=>{
-      $(e).toggleClass(`hidden animate__animated animate__backInRight animate__delay-${i}s`)
-    }));
-  } else {
-    $("li").each((i,e)=>$(e).toggleClass("hidden"))
-  }
+if (window.innerWidth < 1024) {
+  document.querySelector("li").addEventListener("click", () => {
+    [...document.querySelectorAll(".dropdown-nav")].forEach((e, i) => {
+      e.classList.toggle("hidden")
+      e.classList.toggle("animate__animated")
+      e.classList.toggle("animate__backInRight")
+      e.classList.toggle(`animate__delay-${i}s`)
+    });
+  })
+} else {
+  [...document.querySelectorAll("li")].forEach(e => e.classList.toggle("hidden"));
+}
 
-  $(".skill").hover(function(){
-    const t = $(this)[0];
-    const logo = $(t.children[0])
-    const bar = $(t.children[1])
-    if (logo.width() > "44.9999") {
-      logo.animate({width: "-=15px", height: "-=15px"}, 500)
-      bar.removeClass("hidden")
-      bar.animate({
-        height: "+=15px",
-        opacity: "1"
-      }, 500)
+[...document.querySelectorAll(".skill img")].forEach((e) => {
+  e.addEventListener("mouseover", (e) => {
+    if (e.target.width > "44.9999") {
+      e.target.animate([{
+        width: "30px",
+        height: "30px"
+      }], {
+        duration: 500,
+        fill: "forwards"
+      });
+      const bar = e.target.nextElementSibling
+      bar.classList.remove("hidden")
+      bar.animate([{
+        opacity: 1,
+        height: `60px`
+      }], {
+        duration: 500,
+        fill: "forwards"
+      });
     }
   })
-});
+})
+
+/*(function (d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));*/

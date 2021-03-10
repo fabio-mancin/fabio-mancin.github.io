@@ -131,6 +131,13 @@ body {
                 font-size: 2vw;
             }
         }
+        .motto {
+            position: relative;
+            .cursor {
+                position: absolute;
+                right: -2vw;
+            }
+        }
     }
 
     footer {

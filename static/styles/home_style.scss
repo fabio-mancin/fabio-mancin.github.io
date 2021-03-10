@@ -10,7 +10,8 @@
 
     .quote {
         margin: 2vh 0;
-        font-size:  3vw;
+        font-size:  4vw;
+        text-align: center;
         @include for-bigger-phone {
             font-size: 5vw;
         }

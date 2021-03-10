@@ -18,7 +18,8 @@
 
 .home-container .quote {
   margin: 2vh 0;
-  font-size: 3vw;
+  font-size: 4vw;
+  text-align: center;
 }
 
 @media (min-width: 400px) {
