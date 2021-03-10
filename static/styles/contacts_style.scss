@@ -18,6 +18,9 @@
     .form {
         justify-self: center;
         align-self: center;
+        @include for-desktop-up {
+            font-size: 1.5vw;
+        }
     }
 
     .contact a {

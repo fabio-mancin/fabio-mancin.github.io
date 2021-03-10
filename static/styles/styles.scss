@@ -126,11 +126,12 @@ body {
     grid-row-gap: 1vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 8vh 5vh auto 6.5vh 5vh;
-    grid-template-areas: "decoration-top . ."
-    "home nav-area nav-area"
-    "main-area main-area main-area"
-    ". . decoration-bottom"
-    "footer-area footer-area footer-area";
+    grid-template-areas: 
+        "decoration-top . ."
+        "home nav-area nav-area"
+        "main-area main-area main-area"
+        ". . decoration-bottom"
+        "footer-area footer-area footer-area";
 
     @include for-desktop-up {
         grid-template-columns: 20% 80%;

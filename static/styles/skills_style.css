@@ -1,13 +1,49 @@
 .skills-container {
   width: 100%;
   height: 100%;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
-  margin: auto;
+  -ms-grid-rows: 10% (1fr)[5] 10%;
+      grid-template-rows: 10% repeat(5, 1fr) 10%;
+  row-gap: 3vh;
+}
+
+@media (min-width: 1024px) {
+  .skills-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 10% (1fr)[4] 10%;
+        grid-template-rows: 10% repeat(4, 1fr) 10%;
+  }
+}
+
+.skills-container h1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  text-align: center;
+  margin: 0;
+}
+
+.skills-container h2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .skills-container h1, .skills-container h2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+  }
 }
 
 .skills-container .skill {
@@ -28,7 +64,8 @@
 }
 
 .skills-container .skill img {
-  width: 65px;
+  width: 45px;
+  height: auto;
 }
 
 .skills-container .skill .skill-detail {

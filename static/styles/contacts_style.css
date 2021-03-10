@@ -27,6 +27,13 @@
       align-self: center;
 }
 
+@media (min-width: 1024px) {
+  .contacts-container .contact,
+  .contacts-container .form {
+    font-size: 1.5vw;
+  }
+}
+
 .contacts-container .contact a {
   display: -webkit-box;
   display: -ms-flexbox;
