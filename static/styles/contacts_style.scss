@@ -9,9 +9,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 
-    .form {
+    .form, h1, h2 {
         grid-column-start: 1;
         grid-column-end: span 2;
+        text-align: center;
     }
 
     .contact,
@@ -63,7 +64,7 @@
 
         @keyframes increase-size {
             to {
-                font-size: 15vw;
+                font-size: 5vw;
             }
         }
     }

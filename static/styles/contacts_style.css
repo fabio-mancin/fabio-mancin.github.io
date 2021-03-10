@@ -11,11 +11,12 @@
       grid-template-rows: auto;
 }
 
-.contacts-container .form {
+.contacts-container .form, .contacts-container h1, .contacts-container h2 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-column-span: 2;
       grid-column-end: span 2;
+  text-align: center;
 }
 
 .contacts-container .contact,
@@ -90,13 +91,13 @@
 
 @-webkit-keyframes increase-size {
   to {
-    font-size: 15vw;
+    font-size: 5vw;
   }
 }
 
 @keyframes increase-size {
   to {
-    font-size: 15vw;
+    font-size: 5vw;
   }
 }
 
