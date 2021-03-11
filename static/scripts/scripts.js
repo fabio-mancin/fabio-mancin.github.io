@@ -50,7 +50,7 @@ class Typewriter {
     return new Promise((res, err) => {
       let counter = 0
       let interval = setInterval(function(){
-        console.log(string[counter])
+        this.targetSelector.innerHTML += string[counter]
         counter++
         if (counter === string.length) {
           res(()=>{return this})
