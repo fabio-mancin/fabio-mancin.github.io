@@ -34,6 +34,54 @@ if (window.innerWidth < 1024) {
   })
 })
 
+class Typewriter {
+  constructor(targetSelector, userSettings) {
+    const defaultSettings = {
+      cursorDelay: 500,
+      typingDelay: 1000
+    }
+    this.settings = {
+      ...defaultSettings,
+      ...userSettings
+    }
+    this.targetSelector = document.querySelector(targetSelector)
+  }
+  typeString(string) {
+    return new Promise((res, err) => {
+      let counter = 0
+      let interval = setInterval(function(){
+        console.log(string[counter])
+        counter++
+        if (counter === string.length) {
+          res(()=>{return this})
+          clearInterval(interval)
+        }
+      }, this.settings.typingDelay)
+    })
+  }
+  deleteChars(number) {
+    return new Promise((res, err) => {
+      let counter = 0
+      let interval = setInterval(function(){
+        this.targetSelector.innerHTML = this.targetSelector.innerHTML.slice(0, -1)
+        counter++
+        if (counter === number) {
+          res(()=>{return this})
+          clearInterval(interval)
+        }
+      }, this.settings.typingDelay)
+    })
+  }
+  blinkCursor() {
+    let cursorElement = document.createElement("span")
+    cursorElement.innerHTML = "|"
+    this.targetSelector.innerHTML += cursorElement
+    setInterval(function(){
+      cursorElement.classList.toggle("hidden")
+    }, this.settings.cursorDelay)
+  }
+}
+
 /*(function (d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
