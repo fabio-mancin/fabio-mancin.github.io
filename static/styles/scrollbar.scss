@@ -1,11 +1,12 @@
 $scrollbar-background-color: #525151;
 
-main {
+main, pre {
   scrollbar-width: thin;
   scrollbar-color: white #525151;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   &::-webkit-scrollbar {
     width: 11px;
+    height: 11px;
   }
   &::-webkit-scrollbar-track {
     background: #525151;

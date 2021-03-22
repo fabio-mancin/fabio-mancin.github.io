@@ -1,2 +1,2 @@
-main{scrollbar-width:thin;scrollbar-color:white #525151;overflow-x:hidden}main::-webkit-scrollbar{width:11px}main::-webkit-scrollbar-track{background:#525151}main::-webkit-scrollbar-thumb{background-color:white;border-radius:6px;border:3px solid #525151}
+main,pre{scrollbar-width:thin;scrollbar-color:white #525151;overflow-x:hidden}main::-webkit-scrollbar,pre::-webkit-scrollbar{width:11px;height:11px}main::-webkit-scrollbar-track,pre::-webkit-scrollbar-track{background:#525151}main::-webkit-scrollbar-thumb,pre::-webkit-scrollbar-thumb{background-color:white;border-radius:6px;border:3px solid #525151}
 /*# sourceMappingURL=scrollbar.min.css.map */

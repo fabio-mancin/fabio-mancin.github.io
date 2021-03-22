@@ -1,0 +1,54 @@
+@import "_breakpoint_mixins.scss";
+
+.blog-container {
+  display: grid;
+  grid-row-gap: 3vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 30%;
+
+  .blog-article {
+    .lang {
+      grid-area: lang;
+      border-right: 1px solid white;
+    }
+
+    .title {
+      grid-area: title;
+      font-size: 4vw;
+      justify-content: center;
+      border-bottom: 1px solid white;
+      @include for-desktop-up {
+        font-size: 2vw;
+      }
+    }
+
+    .description {
+      grid-area: desc;
+      font-size: 3vw;
+      @include for-desktop-up {
+        font-size: 1.5vw;
+      }
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+    }
+
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 30% 1fr;
+    @include for-desktop-up {
+      grid-template-columns: 10% 1fr;
+    }
+    column-gap: 5vw;
+    grid-template-areas: 
+    "lang title"
+    "lang desc";
+    margin: 0 1vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &:hover {
+      box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    }
+  }
+}
