@@ -1,5 +1,5 @@
 if (window.innerWidth < 1024) {
-  document.querySelector("li").addEventListener("click", () => {
+  document.querySelector("nav ul li").addEventListener("click", () => {
     [...document.querySelectorAll(".dropdown-nav")].forEach((e, i) => {
       e.classList.toggle("hidden")
       e.classList.toggle("animate__animated")
@@ -8,7 +8,7 @@ if (window.innerWidth < 1024) {
     });
   })
 } else {
-  [...document.querySelectorAll("li")].forEach(e => e.classList.toggle("hidden"));
+  [...document.querySelectorAll("nav ul li")].forEach(e => e.classList.toggle("hidden"));
 }
 
 [...document.querySelectorAll(".skill img")].forEach((e) => {

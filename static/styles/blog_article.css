@@ -20,6 +20,16 @@
   color: whitesmoke;
 }
 
+.markdown-body a:link,
+.markdown-body a:visited {
+  text-decoration: inherit;
+  color: #189ad3;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   .markdown-body {
     padding: 15px;

@@ -17,6 +17,16 @@
   blockquote p {
     color: whitesmoke;
   }
+
+  a:link,
+  a:visited {
+    text-decoration: inherit;
+    color: #189ad3;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 767px) {
